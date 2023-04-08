@@ -1,0 +1,30 @@
+.link-holder {
+  top: 0;
+  width: 100%;
+  padding: 20px 80px 20px 80px;
+  background-color: #fff;
+}
+
+.link-holder,
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin: 0;
+  gap: 20px;
+  font-size: 12px;
+}
+
+a {
+  color: black;
+}
+
+.store a {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(0, 162, 255);
+}
+
+.Cate a {
+  color: gray;
+}

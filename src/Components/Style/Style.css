@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  background: rgb(244, 243, 243);
+}
+
+.container {
+  padding: 50px 80px 20px 80px;
+}
+
+form * {
+  padding-top: 20px;
+}
+
+hr {
+  padding: 0;
+  margin-top: 20px;
+  color: rgb(244, 243, 243);
+}
+
+.formInput {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+input {
+  padding: 8px;
+  width: 20%;
+}
+
+button {
+  padding: 5px 25px 5px 25px;
+  background-color: rgb(22, 121, 219);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.eachBook {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 30px;
+  border: 2px solid rgb(225, 225, 225);
+  border-radius: 5px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
