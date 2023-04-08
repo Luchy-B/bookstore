@@ -41,7 +41,7 @@ Fullstack developer: includes both front end and Backend developer.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://luchy-b.github.io/BookStore/dist/)
+- [Live Demo Link](https://bookstore-bsoq.onrender.com)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
