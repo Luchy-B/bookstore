@@ -39,7 +39,7 @@ Fullstack developer: includes both front end and Backend developer.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Live Demo: (https://luchy-b.github.io/BookStore/dist/)
+- [Live Demo Link](https://luchy-b.github.io/BookStore/dist/)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
