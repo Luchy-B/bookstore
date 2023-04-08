@@ -1,6 +1,7 @@
 import '../Style/Style.css';
+import NewBookForm from './NewBookForm';
 
-const MyTodo = () => {
+const Book = () => {
   const data = [
     {
       id: 1,
@@ -32,20 +33,10 @@ const MyTodo = () => {
             <button type="button" id="remove">Remove</button>
           </div>
         ))}
-        <form>
-          <hr />
-          <h3>Add New Book</h3>
-          <div className="formInput">
-            <input type="text" id="title" placeholder="Book Title" />
-            <br />
-            <input type="text" id="name" placeholder="Author" />
-            <br />
-            <button type="submit">ADD BOOK</button>
-          </div>
-        </form>
       </div>
+      <NewBookForm />
     </>
   );
 };
 
-export default MyTodo;
+export default Book;
