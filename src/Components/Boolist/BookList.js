@@ -8,7 +8,6 @@ const BookList = () => {
   const { books } = useSelector((store) => store.books);
   return (
     <>
-
       <div className="container">
         {books.map((book) => (
           <MyBook key={book.id} book={book} />
