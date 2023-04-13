@@ -15,12 +15,12 @@
     "extends": ["airbnb", "plugin:react/recommended", "plugin:react-hooks/recommended"],
     "plugins": ["import"],
     "rules": {
-      "no-param-reassign": [2, { "props": false }],
       "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
       "react/react-in-jsx-scope": "off",
-      // "import/extensions": ["error", "ignorePackages"],
       "import/no-unresolved": "off",
-      "no-shadow": "off"
+      "no-shadow": "off",
+      "react/jsx-no-bind": "off",
+      "no-param-reassign": 0
     },
     "ignorePatterns": [
       "dist/",
