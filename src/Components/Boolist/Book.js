@@ -7,10 +7,21 @@ const MyBook = ({ book }) => {
   const dispatch = useDispatch();
   return (
     <div className="eachBook" key={book.id}>
-      <h2>{book.title}</h2>
+
+      <div>
+        <p>{book.category}</p>
+        <h2>{book.title}</h2>
+        <p>{book.author}</p>
+        <ul>
+          <li>Comments</li>
+          <li>Remove</li>
+          <li>Edit</li>
+        </ul>
+      </div>
+
       <p>
-        By
-        {book.author}
+          By
+          {book.author}
       </p>
       <button
         type="button"
