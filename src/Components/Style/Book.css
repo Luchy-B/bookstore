@@ -1,0 +1,71 @@
+.title {
+    padding-top: 5px;
+}
+
+.actionsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 20px;
+    color: rgb(22, 121, 219);
+    
+}
+
+.actionsContainer button {
+    background-color: #fff;
+    color: rgb(22, 121, 219);
+    border: none;
+    cursor: pointer;
+}
+
+.category {
+    font-weight: 700;
+}
+
+.author {
+    color: rgb(22, 121, 219);
+}
+
+.actionsContainer hr {
+    height: 15px;
+    border: 1px solid rgb(111, 110, 110);   
+}
+
+.percentageContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 20px;
+}
+.percentage h3 {
+    font-size: 30px;
+}
+
+.category, .percentage p, .updateContainer h5 {
+    font-weight: 700;
+    color: rgb(111, 110, 110);
+}
+
+.updateContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+.updateContainer p{
+    margin: 10px 0px 20px 0px;
+}
+
+.eachBookHr {
+    border: 1px solid rgb(166, 166, 166);
+    height: 80px;
+    position: relative;
+}
+
+.selectOption {
+    background-color: #fff;
+    padding: 10px;
+    width: 15%;
+    border: 1px solid rgb(166, 166, 166);
+}

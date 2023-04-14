@@ -15,7 +15,7 @@ body {
 }
 
 form * {
-  padding-top: 20px;
+  padding: 30px 0px 0px 50px;
 }
 
 hr {
@@ -27,17 +27,23 @@ hr {
 .formInput {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-top: 20px;
+}
+
+.form h3{
+  padding-left: 90px;
+  color: rgb(111, 110, 110);
+  font-size: 30px;
 }
 
 input {
   padding: 8px;
-  width: 20%;
+  width: 15%;
 }
 
-button {
-  padding: 5px 25px 5px 25px;
+.btn {
+  padding: 10px 25px 10px 25px;
   background-color: rgb(22, 121, 219);
   color: #fff;
   border: none;
@@ -47,14 +53,25 @@ button {
   font-weight: 600;
 }
 
+.btn:hover {
+  background-color: white;
+  cursor: pointer;
+  color: rgb(22, 121, 219);
+  border: 2px solid rgb(22, 121, 219);
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
 .eachBook {
   display: flex;
   flex-direction: row;
-  align-items: baseline;
   justify-content: space-between;
   padding: 30px;
   border: 2px solid rgb(225, 225, 225);
   border-radius: 5px;
   background-color: #fff;
   margin-bottom: 10px;
+  position: relative;
 }

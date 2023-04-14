@@ -7,6 +7,7 @@ const NewBookForm = () => {
   const initialInputs = {
     title: '',
     author: '',
+    category: '',
   };
   const [input, setInputs] = useState(initialInputs);
   const dispatch = useDispatch();
@@ -25,7 +26,7 @@ const NewBookForm = () => {
     setInputs(initialInputs);
   };
   return (
-    <form onSubmit={handleClick}>
+    <form onSubmit={handleClick} className="form">
       <hr />
       <h3>Add New Book</h3>
       <div className="formInput">
@@ -33,7 +34,22 @@ const NewBookForm = () => {
         <br />
         <input type="text" id="name" onChange={handleChange} name="author" value={input.author} placeholder="Author" />
         <br />
-        <button type="submit" onClick={handleClick}>ADD BOOK</button>
+        <select
+          id="category"
+          className="selectOption"
+          name="category"
+          value={input.category}
+          onChange={handleChange}
+          style={{ paddingRight: '5px' }}
+        >
+          <option value="" disabled selected hidden className="selectCat">--Category--</option>
+          <option value="fiction">Fiction</option>
+          <option value="non-fiction">Non-Fiction</option>
+          <option value="mystery">Mystery</option>
+          <option value="sci-fi">Science Fiction</option>
+        </select>
+        <br />
+        <button type="submit" onClick={handleClick} className="btn">ADD BOOK</button>
       </div>
     </form>
   );

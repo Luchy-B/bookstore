@@ -38,13 +38,15 @@ export const getBooks = createAsyncThunk('books/getBooks', async () => {
 
 export const postBook = createAsyncThunk(
   'books/postBookToApi',
-  async ({ id, title, author }) => {
+  async ({
+    id, title, author, category,
+  }) => {
     try {
       const dataStream = await axios.post(url, {
         item_id: id,
         title,
         author,
-        category: 'fiction',
+        category,
       });
       return dataStream;
     } catch (err) {
