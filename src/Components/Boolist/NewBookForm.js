@@ -46,7 +46,8 @@ const NewBookForm = () => {
           <option value="fiction">Fiction</option>
           <option value="non-fiction">Non-Fiction</option>
           <option value="mystery">Mystery</option>
-          <option value="sci-fi">Science Fiction</option>
+          <option value="sci-fi">Romance</option>
+          <option value="sci-fi">Fantasy</option>
         </select>
         <br />
         <button type="submit" onClick={handleClick} className="btn">ADD BOOK</button>
