@@ -10,6 +10,7 @@ const MyBook = ({ book }) => {
       <h2>{book.title}</h2>
       <p>
         By
+        <span> </span>
         {book.author}
       </p>
       <button

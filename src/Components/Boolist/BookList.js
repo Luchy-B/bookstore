@@ -16,11 +16,10 @@ const BookList = () => {
   }, [dispatch, ifSuccess]);
   if (isLoading) {
     return (
-      <div>loader</div>
+      <div>Please wait, it is loading</div>
     );
   }
-  if (error) return <h2>An error has occured</h2>;
-  if (books.length === 0) return <h2>there are no books</h2>;
+  if (error) return <h2>An error occured while getting books</h2>;
 
   return (
     <>
