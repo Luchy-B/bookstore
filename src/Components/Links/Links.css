@@ -1,8 +1,6 @@
 .link-holder {
   top: 0;
   width: 100%;
-  padding: 20px 80px 20px 80px;
-  /* background-color: #fff; */
 }
 
 .link-holder,
@@ -21,19 +19,17 @@
 .navContainer {
   display: flex;
   background-color: #fff;
-  padding-right: 80px;
   font-family: var(--montserrat);
   font-style: normal;
   font-weight: bold;
+  padding: 1.313rem 6.25rem 1.313rem 6.25rem;
 }
 
 a {
   color: black;
-
 }
 
 .store a {
-  font-size: 20px;
   font-weight: 600;
   color: #0290ff;
   font-size: 1.875rem;
@@ -44,7 +40,7 @@ a {
 }
 
 .oval {
-  margin: 5px 0px 5px 0px;
+  margin: 5px 0 5px 0;
   border: solid 2px #e8e8e8;
   border-radius: 50px;
   padding-left: 15px;
@@ -52,5 +48,3 @@ a {
   padding-bottom: 15px;
   width: 40px;
 }
-
-

@@ -28,7 +28,7 @@ body {
 }
 
 .container {
-  padding: 50px 80px 20px 80px;
+  margin: 2.313rem 6.25rem 0;
 }
 
 form * {
@@ -52,7 +52,7 @@ hr {
 .form h3 {
   padding-left: 90px;
   color: #888;
-  font-size: 1.25rem; 
+  font-size: 1.25rem;
   font-family: var(--montserrat);
   font-style: normal;
   font-weight: bold;
@@ -60,7 +60,7 @@ hr {
 
 input {
   padding: 8px;
-  width:   17.813rem;
+  width: 17.813rem;
 }
 
 .btn {
@@ -69,7 +69,7 @@ input {
   border: none;
   border-radius: 3px;
   width: 11.5rem;
-  height: 2.813rem; 
+  height: 2.813rem;
   margin: 1.188rem 0 0 2.125rem;
   padding: 0.801rem 1.188rem 0.886rem 1.375rem;
   font-family: var(--robotoslab);
@@ -82,6 +82,7 @@ input {
 .btnInput {
   margin-top: 1px;
 }
+
 .btn:hover {
   background-color: white;
   cursor: pointer;
