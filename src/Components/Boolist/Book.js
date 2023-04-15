@@ -2,7 +2,7 @@ import '../Style/Book.css';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { CircularProgressbar } from 'react-circular-progressbar';
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import { deleteBook } from '../../redux/books/booksSlice';
 
@@ -37,7 +37,15 @@ const MyBook = ({ book }) => {
 
       <div className="percentageContainer">
         <div strokeWidth={20} className="progress" style={{ width: 70, height: 70 }}>
-          <CircularProgressbar className="progress-bar" value={percentage} />
+          <CircularProgressbar
+            className="progress-bar"
+            value={65}
+            styles={buildStyles({
+              pathTransitionDuration: 0.5,
+              pathColor: 'linear-gradient(to bottom, #307bbe, #e8e8e8)',
+              trailColor: '#e8e8e8',
+            })}
+          />
         </div>
         <div className="percentage">
           <h3>{percentage}</h3>
@@ -52,7 +60,9 @@ const MyBook = ({ book }) => {
         <div>
           <h5>CURRENT CHAPTER</h5>
           <p>{`Chapter ${randomCap}`}</p>
-          <button type="button" className="btn">UPDATE PROGRESS</button>
+          <div className="updateBtn">
+            <button type="button" className="btn">UPDATE PROGRESS</button>
+          </div>
         </div>
       </div>
     </div>

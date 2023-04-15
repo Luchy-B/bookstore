@@ -2,7 +2,7 @@
   top: 0;
   width: 100%;
   padding: 20px 80px 20px 80px;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 
 .link-holder,
@@ -12,19 +12,45 @@
   align-items: baseline;
   margin: 0;
   gap: 20px;
-  font-size: 12px;
+  font-size: 0.813rem;
+  list-style-type: none;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.navContainer {
+  display: flex;
+  background-color: #fff;
+  padding-right: 80px;
+  font-family: var(--montserrat);
+  font-style: normal;
+  font-weight: bold;
 }
 
 a {
   color: black;
+
 }
 
 .store a {
   font-size: 20px;
   font-weight: 600;
-  color: rgb(0, 162, 255);
+  color: #0290ff;
+  font-size: 1.875rem;
 }
 
 .Cate a {
   color: gray;
 }
+
+.oval {
+  margin: 5px 0px 5px 0px;
+  border: solid 2px #e8e8e8;
+  border-radius: 50px;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 40px;
+}
+
+

@@ -42,7 +42,7 @@ const NewBookForm = () => {
           onChange={handleChange}
           style={{ paddingRight: '5px' }}
         >
-          <option value="" disabled selected hidden className="selectCat">--Category--</option>
+          <option value="" disabled hidden className="selectCat">--Category--</option>
           <option value="fiction">Fiction</option>
           <option value="non-fiction">Non-Fiction</option>
           <option value="mystery">Mystery</option>
@@ -50,7 +50,7 @@ const NewBookForm = () => {
           <option value="sci-fi">Fantasy</option>
         </select>
         <br />
-        <button type="submit" onClick={handleClick} className="btn">ADD BOOK</button>
+        <button type="submit" onClick={handleClick} className="btn btnInput">ADD BOOK</button>
       </div>
     </form>
   );

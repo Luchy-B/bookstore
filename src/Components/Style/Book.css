@@ -1,5 +1,11 @@
 .title {
   padding-top: 5px;
+  font-family: var(--robotoSlab);
+  font-size: 1.375rem;
+  font-weight: bold;
+  font-style: normal;
+  line-height: normal;
+  color: var(--black-two);
 }
 
 .actionsContainer {
@@ -12,22 +18,37 @@
 
 .actionsContainer button {
   background-color: #fff;
-  color: rgb(22, 121, 219);
+  /* color: rgb(22, 121, 219); */
   border: none;
   cursor: pointer;
+  font-family: var(--robotoSlab);
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--cool-blue);
 }
 
 .category {
-  font-weight: 700;
+  font-weight: 400;
+  opacity: 0.5;
+  font-family: var(--montserrat);
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-style: normal;
 }
 
 .author {
-  color: rgb(22, 121, 219);
+  margin: 0.25rem 0 0;
+  font-family: var(--robotoSlab);
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--cool-blue);
 }
 
 .actionsContainer hr {
   height: 15px;
-  border: 1px solid rgb(111, 110, 110);
+  border: 1px solid rgb(230, 230, 230);
 }
 
 .percentageContainer {
@@ -42,24 +63,43 @@
 }
 
 .category,
-.percentage p,
-.updateContainer h5 {
+.percentage p {
   font-weight: 700;
-  color: rgb(111, 110, 110);
+  color: var(--black-two);
+}
+
+.updateContainer h5 {
+  opacity: 0.5;
+  font-family: var(--robotoSlab);
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--black-two);
 }
 
 .updateContainer {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  padding-right: 9.188rem;
+  padding-right: 9.188rem;
 }
 
 .updateContainer p {
-  margin: 10px 0 20px 0;
+  font-family: var(--robotoSlab);
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: -0.4px;
+  color: var(--black-two);
+}
+
+.updateBtn button {
+ margin-left: 0px;
 }
 
 .eachBookHr {
-  border: 1px solid rgb(166, 166, 166);
+  border: 1px solid rgb(230, 230, 230);
   height: 80px;
   position: relative;
 }
