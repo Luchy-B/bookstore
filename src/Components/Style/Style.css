@@ -1,7 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   text-decoration: none;
+}
+
+:root {
+  --azure: #0290ff;
+  --cool-blue: #4386bf;
+  --black: #121212;
+  --white-Two: #fff;
+  --pale-grey: #f5f6fa;
+  --very-light-pink: #c4c4c4;
+  --grey: #e8e8e8;
+  --linkColor: #212529;
+  --montserrat: 'Montserrat', sans-serif;
+  --robotoslab: 'Roboto Slab', serif;
+  --medium-blue: #307bbe;
 }
 
 body {
@@ -11,11 +28,11 @@ body {
 }
 
 .container {
-  padding: 50px 80px 20px 80px;
+  margin: 2.313rem 6.25rem 0;
 }
 
 form * {
-  padding-top: 20px;
+  padding: 30px 0 0 50px;
 }
 
 hr {
@@ -27,20 +44,50 @@ hr {
 .formInput {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-top: 20px;
+  height: 2.813rem;
+}
+
+.form h3 {
+  padding-left: 90px;
+  color: #888;
+  font-size: 1.25rem;
+  font-family: var(--montserrat);
+  font-style: normal;
+  font-weight: bold;
 }
 
 input {
   padding: 8px;
-  width: 20%;
+  width: 17.813rem;
 }
 
-button {
-  padding: 5px 25px 5px 25px;
-  background-color: rgb(22, 121, 219);
+.btn {
+  background-color: var(--azure);
   color: #fff;
   border: none;
+  border-radius: 3px;
+  width: 11.5rem;
+  height: 2.813rem;
+  margin: 1.188rem 0 0 2.125rem;
+  padding: 0.801rem 1.188rem 0.886rem 1.375rem;
+  font-family: var(--robotoslab);
+  font-style: normal;
+  letter-spacing: 0.5px;
+  font-size: 0.813rem;
+  font-weight: bold;
+}
+
+.btnInput {
+  margin-top: 1px;
+}
+
+.btn:hover {
+  background-color: white;
+  cursor: pointer;
+  color: rgb(22, 121, 219);
+  border: 2px solid rgb(22, 121, 219);
   border-radius: 5px;
   margin: 5px;
   font-size: 10px;
@@ -50,11 +97,11 @@ button {
 .eachBook {
   display: flex;
   flex-direction: row;
-  align-items: baseline;
   justify-content: space-between;
   padding: 30px;
   border: 2px solid rgb(225, 225, 225);
   border-radius: 5px;
   background-color: #fff;
   margin-bottom: 10px;
+  position: relative;
 }

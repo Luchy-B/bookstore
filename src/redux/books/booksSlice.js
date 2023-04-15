@@ -38,15 +38,17 @@ export const getBooks = createAsyncThunk('books/getBooks', async () => {
 
 export const postBook = createAsyncThunk(
   'books/postBookToApi',
-  async ({ id, title, author }) => {
+  async ({
+    id, title, author, category,
+  }) => {
     try {
-      const dataStream = await axios.post(url, {
+      await axios.post(url, {
         item_id: id,
         title,
         author,
-        category: 'fiction',
+        category,
       });
-      return dataStream;
+      return 1;
     } catch (err) {
       return err;
     }
@@ -55,8 +57,8 @@ export const postBook = createAsyncThunk(
 
 export const deleteBook = createAsyncThunk('books/deleteBook', async (id) => {
   try {
-    const dataStream = await axios.delete(url + id);
-    return dataStream;
+    await axios.delete(url + id);
+    return 1;
   } catch (err) {
     return err;
   }
